@@ -36,7 +36,19 @@ html::-webkit-scrollbar-tumb {
 body {
   background: var(--bg);
 }
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--indigo-color);
+  cursor: pointer;
+}
 
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
 .header {
   background: var(--bg);
   display: flex;
@@ -121,9 +133,9 @@ body {
 .header .cart-items-container {
   position: absolute;
   top: 100%;
-  right: 0%;
+  right: -100%;
   height: calc(100vh - 9.5rem);
-  witdh: 30rem;
+  witdh: 70rem;
   background: #fff;
   padding: 0 1.5rem;
 }
@@ -134,4 +146,73 @@ body {
   display: flex;
   aligh-items: center;
   gap: 1.5rem;
+  width: 20rem;
+}
+
+.header .cart-items-container .cart-item .fa-times {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+}
+.header .cart-items-container .cart-item .fa-times:hover {
+  color: var(--indigo-color);
+}
+
+.header .cart-items-container .cart-item img {
+  height: 9rem;
+  width: 5rem;
+}
+.header .cart-items-container .cart-item .content h3 {
+  font-size: 1.5rem;
+  color: black;
+  padding-bottom: 0.5rem;
+}
+.header .cart-items-container .cart-item .content .price {
+  font-size: 1rem;
+  color: var(--orange-color);
+}
+
+.header .cart-items-container btn {
+  witdh: 100%;
+  text-aligh: center;
+}
+
+/*media queries */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+}
+@media (max-width: 991px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    background: 30rem;
+  }
+  .header .navbar a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+  }
 }
