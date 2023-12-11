@@ -212,7 +212,7 @@ body {
     height: calc(100vh - 9.5rem);
   }
 
-  .header .navbar .active {
+  .header .active {
     right: 0%;
   }
   .header .navbar a {
