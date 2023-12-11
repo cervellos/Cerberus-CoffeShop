@@ -206,10 +206,14 @@ body {
   .header .navbar {
     position: absolute;
     top: 100%;
-    right: 100%;
+    right: -100%;
     background-color: #fff;
     width: 30rem;
     height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar .active {
+    right: 0%;
   }
   .header .navbar a {
     display: block;
@@ -218,7 +222,5 @@ body {
     font-size: 2rem;
     color: black;
     text-transform: none;
-  }
-  .header .navbar a:hover {
   }
 }
