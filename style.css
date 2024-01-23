@@ -94,7 +94,7 @@ body {
   display: none;
 }
 
-.header .search-form {
+.search-form {
   position: absolute;
   top: 115%;
   right: 7%;
@@ -103,10 +103,22 @@ body {
   height: 3rem;
   display: flex;
   aligh-items: center;
-  transform: scaleY(0);
   transform-origin: top;
+  transform: scaleY(0);
 }
 
+.search-form.active {
+  position: absolute;
+  top: 115%;
+  right: 7%;
+  background: #fff;
+  witdh: 30rem;
+  height: 3rem;
+  display: flex;
+  aligh-items: center;
+  transform-origin: top;
+  transform: scaleY(1);
+}
 .header .search-form input {
   width: 100%;
   height: 100%;
@@ -138,6 +150,10 @@ body {
   witdh: 70rem;
   background: #fff;
   padding: 0 1.5rem;
+}
+
+.header .cart-items-container .active {
+  right: 0%;
 }
 
 .header .cart-items-container .cart-item {
@@ -222,5 +238,9 @@ body {
     font-size: 2rem;
     color: black;
     text-transform: none;
+  }
+  .header .search-form {
+    width: 90%;
+    right: 2rem;
   }
 }
