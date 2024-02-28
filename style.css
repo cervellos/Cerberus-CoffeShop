@@ -6,7 +6,7 @@
   --indigo-color: #736cd3;
   --pink-color: #e77bb8;
   --orange-color: #d17550;
-  --bg: #1a1d24;
+  --bg: black;
   --border: 0.1rem solid #736cd3;
 }
 
@@ -36,6 +36,23 @@ html::-webkit-scrollbar-tumb {
 body {
   background: var(--bg);
 }
+
+section {
+  padding: 2rem 10%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 3.5rem;
+}
+.heading span {
+  color: var(--indigo-color);
+  text-transform: uppercase;
+}
+
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -196,6 +213,57 @@ body {
   text-aligh: center;
 }
 
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: cover;
+  justify-content: center;
+  box-shadow: inset 0 -3em 3em black;
+  opacity: 0.8;
+}
+
+.home .content {
+  max-witdh: 60rem;
+}
+
+.home .content h3 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.home .content p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+
+.about .row {
+  display: flex;
+  aligh: center;
+  background: var(--indigo-color);
+  flex-wrap: wrap;
+  opacity: 0.8;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row .image img {
+  width: 100%;
+  height: 100%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.about .row .content .btn {
+  background-color: var(--main-color);
+}
+
 /*media queries */
 @media (max-width: 991px) {
   html {
@@ -204,17 +272,13 @@ body {
   .header {
     padding: 1.5rem 2rem;
   }
+
+  section {
+    padding: 2rem;
+  }
 }
 
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-  .header {
-    padding: 1.5rem 2rem;
-  }
-}
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   #menu-btn {
     display: inline-block;
   }
@@ -242,5 +306,22 @@ body {
   .header .search-form {
     width: 90%;
     right: 2rem;
+  }
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-ling: center;
+  }
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+  .home .content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
   }
 }
