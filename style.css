@@ -217,7 +217,11 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   background: url("/images/home-bg.jpg") no-repeat;
+=======
+  background: url(/images/home-bg.jpg) no-repeat;
+>>>>>>> b43d8c6704dc6817c643f64a8ebc4e748ed3865f
   background-size: cover;
   justify-content: center;
   box-shadow: inset 0 -3em 3em black;
